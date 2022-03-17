@@ -1,0 +1,213 @@
+console.clear();
+
+const prompt = require('prompt-sync')();
+
+//Variaveis
+let respostas;
+let pontos = 0;
+
+//Pontos
+function pontuacao() {
+
+    if (respostas == 1) {
+        pontos += 10
+    } else { }
+}
+
+
+let nome = prompt('Digite seu nome: ');
+console.log()
+console.log(`Olá ${nome}, você está entrando no livro de histórias interativas de João Victor, o tema deste livro é: `);
+console.log();
+
+
+
+
+console.log('ARTHUR MORGAN, O LENDÁRIO PISTOLEIRO');
+console.log();
+
+console.log('Arthur Morgan é um pistoleiro muito temido que viveu no faroeste americano. Se passando em 1899, Arthur faz parte de uma gangue que vive se mudando fugido dos federais, o nosso pistoleiro é considerado por todos como um grande aliado, pois sempre procura ajudar os membros da gangue, Arthur tem a missão de continuar guiando sua gangue para outros lugares, seguros e bem longe dos federais, entre nessa historia!');
+console.log();
+
+console.log('Antes de participar dessa grande história, aqui vai uma regra básica, para responder as perguntas use: 1 para sim e 0 para não. LET´S GO!');
+
+
+//PERGUNTA 1
+function p1() {
+    console.log('Arthur guiou a gangue ate Grizzlies West, o lugar parece bem monotono, ele encontrou alimento?');
+
+    respostas = +prompt('Responda: ')
+    console.log();
+    if (respostas == 1) {
+        pontuacao()
+        console.log('Hmm, interessante, Arthur parece focado em seu objetivo...');
+        console.log();
+        console.log();
+        p2()
+
+    } else if (respostas == 0) {
+        console.log('Arthur parece preocupado, pois a próxima cidade aparenta estar distante...');
+        console.log();
+        console.log();
+        p2()
+    } else {
+        voltar(1);
+    }
+}
+console.log();
+console.log();
+
+
+//PERGUNTA 2
+function p2() {
+    console.log('Arthur decide perguntar a opinião de seu braço direito, Dutch Van der linde. Dutch então sugere para Arthur que a gangue faça um pequeno acampamento em Grizzlies. Arthur deve aceitar a sugestão de seu amigo?');
+
+    respostas = +prompt('Responda: ')
+    console.log();
+    if (respostas == 1) {
+        pontuacao()
+        console.log('YEAH, todos os membros da gangue pareciam cansados e ficam satisfeitos com a decisão...');
+        console.log();
+        console.log();
+        p3()
+    } else if (respostas == 0) {
+        console.log('Dutch parece meio incomodado por ser ignorado por Arthur, mas a viagem segue...');
+        console.log();
+        console.log();
+        p3()
+    } else {
+        voltar(2);
+    }
+}
+console.log();
+console.log();
+
+//PERGUNTA 3
+function p3() {
+    console.log('Passadas algumas horas, Arthur e sua gangue no caminho da viagem encontram um pelegrino misterioso que aparenta estar perdido, ele se aproxima e pede ajuda... Arthur ajuda o cowboy perdido?');
+
+    respostas = +prompt('Responda: ')
+    console.log();
+    if (respostas == 1) {
+        pontuacao()
+        console.log('Ufa, o pelegrino recebe apoio e integra a gangue, mais um para ajudar...');
+        console.log();
+        console.log();
+        p4()
+    } else if (respostas == 0) {
+        console.log('Todos os membros ficam espantados com a atitude de Arthur, foram ouvidos susurros de: "nossa, ele não parece o mesmo de antes..."');
+        console.log();
+        console.log();
+        p4()
+    } else {
+        voltar(3);
+    }
+}
+console.log();
+console.log();
+//PERGUNTA 4
+function p4() {
+    console.log('Arthur parece próximo de um lugar aparentemente segur... essa não, uma emboscada foi armada contra a gangue, SÃO OS FEDERAIS, Arthur e sua gangue conseguem superar a armadilha?');
+
+    respostas = +prompt('Responda: ')
+    console.log();
+    if (respostas == 1) {
+        pontuacao()
+        console.log('Bang Bang, Arthur abate alguns federais e consegue conduzir o plano...');
+        console.log();
+        console.log();
+        p5()
+    } else if (respostas == 0) {
+        console.log('Droga, isso não era esperado, ocorre uma grande confusão, alguns membros são perdidos, os poucos que sobraram conseguem fugir, Arthur está entre eles...');
+        console.log();
+        console.log();
+        p5()
+    } else {
+        voltar(4)
+    }
+}
+console.log();
+console.log();
+
+//PERGUNTA 5
+function p5() {
+    console.log('Após o confronto, e varias milhas depois, Arthur e sua gangue encontram um lugar inacreditavelmente seguro, os membros se instalam no local, Arthur após isso começa a pensar se realmente quer continuar com a vida de fora da lei ao lado da gangue. Arthur deve seguir na gangue?');
+
+    respostas = +prompt('Responda: ')
+    console.log();
+    if (respostas == 1) {
+        pontuacao()
+        console.log('Arthur e os membros finalmente podem viver tranquilamente e em paz, pois a região fica bastante afastada.');
+        heroismo()
+        console.log();
+        console.log();
+    } else if (respostas == 0) {
+        console.log('OH NO, todos incrédulos com a decisão, Arthur decide seguir sua vida sozinho, passando o comando para Dutch Van der Linde, que seguirá à frente da gangue...');
+        console.log();
+        console.log();
+        heroismo()
+
+    } else {
+        voltar(5)
+        console.log();
+        console.log();
+    }
+}
+
+p1()
+
+//Heroismo 
+
+function heroismo() {
+    if (pontos == 50) {
+
+        console.log(`Arthur é uma lenda, e seu legado segue intocável.`);
+
+    } else if (pontos == 40) {
+        console.log(`Arthur segue sendo implacável, porém parece estar velho...`);
+
+    } else if (pontos == 30) {
+
+        console.log(`Arthur para alguns já não é mais o mesmo, para outros ainda é uma lenda`);
+    } else if (pontos == 10 || pontos == 20) {
+
+        cconsole.log('Arthur falhou, mas nem tudo parece perdido.');
+    } else {
+
+        console.log('GAME OVER, Arthur decpcionou a todos e falhou miseravelmente no objetivo.');
+    }
+}
+
+
+
+
+
+//Resposta Errada
+function voltar(numPergunta) {
+    if (numPergunta == 1) {
+        console.log();
+        console.log('Hey Cowboy, Digite 1 para sim ou 0 para não');
+        console.log();
+        p1();
+    } else if (numPergunta == 2) {
+        console.log();
+        console.log('Take easy Cowboy, Digite 1 para sim ou 0 para não');
+        console.log();
+        p2();
+    } else if (numPergunta == 3) {
+        console.log();
+        console.log('Hell no Partner, Digite 1 para sim ou 0 para não');
+        console.log();
+        p3();
+    } else if (numPergunta == 4) {
+        console.log();
+        console.logconsole.log('Nop, Digite 1 para sim ou 0 para não');
+        console.log();
+        p4();
+    } else if (numPergunta == 5) {
+        console.log();
+        console.log('Grrr, Digite 1 para sim ou 0 para não');
+        console.log();
+        p5();
+    }
+}
