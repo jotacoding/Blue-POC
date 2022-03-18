@@ -1,0 +1,54 @@
+console.clear();
+const prompt = require ('prompt-sync')();
+
+
+// //ARRAY É DEFINIDO POR [] (ARRAY É UMA LISTA)
+// let lista = ['charles', 'biah', 'gabriel', 'andrei', ['teste', 'batata', ['duda', 'malu']]];
+
+
+// //O PRIMEIRO VALOR DA LISTA É 0
+// console.log(lista[1]);
+
+// console.log(lista[0]);
+
+// console.log(lista[3]);
+
+// console.log(lista[2]);
+
+// console.log(lista[4]);
+
+// //TAMANHO DA LISTA (UM ARRAY DENTRO DE OUTRO CONTA COMO 1)
+// console.log(lista.length);
+
+
+// //UM ARRAY DENTRO DE OUTRO ARRAY
+// console.log(lista[4][0]);   
+
+// //DENTRO DO ITEM 4, EU QUERO O ITEM 2 E DENTRO DO ITEM 2 EU QUERO O ITEM 0
+// console.log(lista[4][2][0]);
+
+
+
+// //ADICIONANDO UM NOVO ELEMENTO
+// lista.push('allan');
+// console.log(lista);
+
+// //ADICIONANDO UMA VARIAVEL DENTRO DO ARRAY
+// let novoAluno = prompt('digite o nome do novo aluno: ');
+// lista.push(novoAluno);
+// console.log(lista);    
+
+
+// //É A MESMA COISA QUE i = i + 1  // 1+= 1
+// //i++
+
+
+let resposta = 'sim'
+
+while (resposta == 'sim' || resposta == 's' ) {
+
+resposta = prompt ('quer repetir? '.toLowerCase);
+
+}
+
+console.log('testando')
