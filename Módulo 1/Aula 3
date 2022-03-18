@@ -1,0 +1,43 @@
+console.clear();
+const prompt = require('prompt-sync')();
+
+
+let numero1 = +prompt('Digite um número: ');
+let numero2 = +prompt('Digite outro número: ');
+
+if (numero1 > numero2)
+console.log('o numero 1 é maior que o numero 2')
+else if (numero1 < numero2) {
+console.log('o numero 2 é maior que o numero 1') 
+} else
+console.log('o numero 1 é igual ao numero 2')
+
+
+/*
+let prova1 = +prompt('Digite a sua nota da primeira prova: ');
+let prova2 = +prompt('Digite a sua nota da segunda prova: ');
+let prova3 = +prompt('Digite a sua nota da terceira prova: ');
+let prova4 = +prompt('Digite a sua nota da quarta prova: ');
+
+let media = (prova1 + prova2 + prova3 + prova4 / 4);
+ 
+if (media >= 7) {
+console.log('PARABÉNS, VOCÊ FOI APROVADO')
+
+} else if (media <= 6,9)
+console.log('Você está de recuperação')
+*/
+
+// = atribui 
+// == compara
+
+/*
+if (teste == 'sim') {
+
+console.log('voce entendeu');
+} 
+else { 
+    console.log('releia');
+} 
+*/
+
