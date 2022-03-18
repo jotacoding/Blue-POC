@@ -1,0 +1,57 @@
+console.clear();
+const prompt = require("prompt-sync")();
+
+
+// isso ta errado
+
+/*
+let viagem = prompt("você costuma viajar?").toLowerCase();
+if (viagem == "sim") console.log("quanto você costuma gastar?");
+let dinheiro = prompt("digite o valor que vc gasta: ");
+
+if (dinheiro == "sim") {
+  if (dinheiro > 10000) {
+    console.log("Vamos para fora do Brasil");
+  } else if (dinheiro > 5000) {
+    console.log("Vamos viajar pelo Brasil");
+  } else if (dinheiro > 1000) {
+    console.log("Vamos para algum lugar perto");
+  } else if (dinheiro > 100) console.log("ai complicou");
+} else {
+  console.log("que pena...");
+}
+*/
+
+
+console.clear();
+const prompt = require("prompt-sync")();
+
+let login = prompt("Crie um login: ");
+console.log();
+
+let senha = prompt("Crie sua senha: ");
+console.log();
+
+let entradaL = prompt("Digite seu login: ");
+console.log();
+let entradaS = prompt("Digite sua senha: ");
+tentativas = 0;
+
+while (entradaL != login || entradaS != senha) {
+  tentativas = tentativas + 1;
+  console.log("senha ou login incorretos!");
+  console.log("Tentativas restantes: ", 3 - tentativas);
+
+  if (tentativas == 3) {
+    console.log(`Tentativas esgotadas`);
+    break;
+  }
+  entradaL = prompt("Digite seu login: ");
+  console.log();
+  entradaS = prompt("Digite sua senha:");
+}
+
+while (entradaL == login || entradaS == senha) {
+  console.log(`Seja bem-vindo(a) ${login}`);
+  break;
+}
