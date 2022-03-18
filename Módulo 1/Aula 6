@@ -1,0 +1,15 @@
+//ARRAYS
+
+console.clear();
+
+const prompt = require('prompt-sync')();
+
+let aluno = joao
+let aluno1 = fernando
+let aluno2 = gabriel
+let professor = tiago
+
+//Uma lista capaz de armazenar vátios elementos, cada um separado por virgula
+let alunos = ['Joao', 'fernando', 'gabriel', professor];
+
+console.log (alunos);
