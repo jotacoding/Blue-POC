@@ -1,0 +1,112 @@
+console.clear();
+
+const prompt = require ('prompt-sync')();
+
+// // //ARRAY É DEFINIDO POR [] (ARRAY É UMA LISTA)
+//  let lista = ['charles', 'biah', 'gabriel', 'andrei', ['teste', 'batata', ['duda', 'malu']]];
+
+
+// // //O PRIMEIRO VALOR DA LISTA É 0
+//  console.log(lista[1]);
+
+//  console.log(lista[0]);
+
+//  console.log(lista[3]);
+
+//  console.log(lista[2]);
+
+//  console.log(lista[4]);
+
+// // //TAMANHO DA LISTA (UM ARRAY DENTRO DE OUTRO CONTA COMO 1)
+// // console.log(lista.length);
+
+
+// // //UM ARRAY DENTRO DE OUTRO ARRAY
+//  console.log(lista[4][0]);   
+
+// // //DENTRO DO ITEM 4, EU QUERO O ITEM 2 E DENTRO DO ITEM 2 EU QUERO O ITEM 0
+//  console.log(lista[4][2][0]);
+
+
+
+// // //ADICIONANDO UM NOVO ELEMENTO
+// lista.push('allan');
+// console.log(lista);
+
+// // //ADICIONANDO UMA VARIAVEL DENTRO DO ARRAY
+// let novoAluno = prompt('digite o nome do novo aluno: ');
+// lista.push(novoAluno);
+// console.log(lista);    
+
+
+// // //É A MESMA COISA QUE i = i + 1  // 1+= 1
+// // //i++
+
+
+// let resposta = 'sim'
+
+// while (resposta == 'sim' || resposta == 's' ) {
+
+// resposta = prompt ('quer repetir? '.toLowerCase());
+
+
+// }
+
+// let lista1 = ['jo', 'ju', 'duda'];
+
+// // lista1.push (['joao', 1, 2 ]);
+
+// // // let listaSplice = lista1.splice(2,2);
+// // // console.log(lista1);
+// // // console.log(listaSplice);
+
+// // lista1.pop();
+// // console.log(lista1);
+
+// let nomeremover = prompt('Qual nome deseja remover: ');
+// let nomeadc = prompt('qual nome deseja adc: ');
+
+//REPETIR ATÉ UMA QUANTIDADE ESPECIFICA (WHILE)
+// let cont = 0;
+
+// while (cont < 5){
+// console.log('repetiu');
+// cont++
+
+// }
+
+
+//FOR (MAIS INDICADO PARA QUANTIDADE FINITA DE REPETIÇÕES)
+// for (let i = 0; i < 5; i++){
+// console.log('repetiu', i + 1);
+
+//}
+
+
+//ordem de execução let, contador<5 depois console.log e depois o contador++ (condição, codigo, acrescimo) (onde começa ; onde terminar ; contador++) {codigo}
+
+// for (let contador = 0 ; contador < 5 ; contador++){
+// console.log('repetiu');
+
+// }
+
+// let filmes = [];
+
+
+// novofilme = prompt ('digite um filme: ');
+
+// while (filmes.includes(novofilme)){
+// console.log('filme ja cadastrado');
+// novofilme = prompt('digite outro filme')
+// filmes.push(novofilme);
+
+// }
+
+//exercicio tabuada
+let numero = +prompt('digite um numero e veja a tabuada dele: ');
+
+for (let num = 1 ; num < 11 ; num++) {
+console.log(`${num} * ${numero} = ${num * numero}`);
+
+
+}
