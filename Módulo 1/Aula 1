@@ -1,0 +1,45 @@
+console.clear(); // Usado para limpar o terminal automaticamente ou ao digitar clear no terminal (ctrl + L tbm funciona). 
+
+const prompt = require('prompt-sync')(); // Para instalar o prompt é: npm install prompt-sync.
+// Fazer essa linha sempre q usar prompt
+
+/*
+console.log("Iniciando um sonho");
+console.log();
+
+// Declarando um variável
+let nome = 'joao Victor';
+let idade = 20; // Sendo utilizado sem as aspas, vira um number, assim podendo ser utiliazado em matematica
+
+//Se eu utilizar "," ele junta e da espaço, se eu utilizar "+" ele junta tudo sem espaço
+console.log('o melhor jogador do mundo é o', nome, 'que tem', idade, 'anos');
+console.log();
+
+// Typeoff mostra o tipo do comando utilizado, exemplo:
+console.log(typeof(nome));
+console.log(typeof(idade));
+
+//Usando prompt (pergunta ao usuario) o prompt recebe a informação dada pelo o usuario e guarda.
+let classe = prompt('Digite sua classe:');
+let nome_aluno = prompt('Digite seu nome:');
+console.log(nome_aluno, 'a sua classe é', classe, 'vamos lá bluemer');
+*/
+
+//Operadores usar "+" antes de prompt para indicar que é um number e não uma string
+let numero1 = +prompt('digite um número: ');
+let numero2 = +prompt('digite outro número: ');
+
+//Guardando resultados (assim podemos usar mais a frente caso quisermos)
+let soma = numero1 + numero2;
+let sub = numero1 - numero2;
+let mult = numero1 * numero2;
+let div = numero1 / numero2;
+
+
+console.log('a soma dos numeros é', soma); 
+console.log('a subtração dos numeros é', sub);
+console.log('a multiplicação dos numeros é', mult);
+console.log('a divisão dos numeros é', div);
+
+
+console.log();
